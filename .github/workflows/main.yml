@@ -1,7 +1,4 @@
-on: 
-  push:
-    branches:
-      - master
+on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -14,6 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: 1X2.XXX.1X3.XX
-        username: test
+        server: 162.241.123.35
+        username: test@hexalitics.com
         password: ${{ secrets.ftp_password }}
